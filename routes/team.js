@@ -3,7 +3,7 @@ var router = express.Router();
 
 router.get('/', (req, res, body) => {
     res.send(JSON.stringify({
-        "team": "",
+        "team": "Shelly's Society",
         "membersNames": [
             "Will Bucher",
             "Ethan Crawford",
