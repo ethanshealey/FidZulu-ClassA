@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var bikesRouter = require('./routes/bikes');
 var foodRouter = require('./routes/food');
 var toysRoutes = require('./routes/toys');
+var teamRouter = require('./routes/team')
 
 var app = express();
 
@@ -24,7 +25,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/classA/bikes', bikesRouter);
 app.use('/classA/toys', toysRoutes);
-app.use('/classA/food', foodRouter);
+app.use('/classA/foods', foodRouter);
+app.use('/classA/team', teamRouter)
 
 
 // catch 404 and forward to error handler
